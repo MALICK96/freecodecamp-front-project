@@ -1,0 +1,171 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  max-width: 80%;
+  margin: auto;
+  color: rgb(30, 30, 32);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  background-color: lightgray;
+}
+
+main {
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 30px;
+}
+
+/* Hedaer */
+
+header {
+  width: 100%;
+  background-color: #ecdada;
+  padding: 20px 0;
+}
+
+/* heading */
+h1,
+h2 {
+  color: rgb(118, 118, 211);
+}
+/* Style for the list */
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  color: rgb(74, 74, 122);
+}
+
+nav a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 8px;
+}
+
+/* Links State Style */
+a:link {
+  color: rgb(30, 30, 32, 0.5);
+}
+
+a:visited {
+  color: rgb(38, 38, 112);
+}
+
+a:hover {
+  color: #b94141;
+}
+
+a:active {
+  background-color: #860404;
+}
+
+/* Main Title */
+.title {
+  /* color: rgb(30, 30, 32); */
+  margin: 30px 0 15px;
+}
+.title + .title-desc,
+.img-wrapper #caption {
+  font-size: 0.95rem;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+/* Center horizontally
+and vertically the elem with #img   */
+
+#hero {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 50px auto 30px;
+  text-align: center;
+}
+
+#title-wrapper {
+  justify-self: center;
+  align-self: center;
+}
+
+#img {
+  width: 70%;
+  height: auto;
+  margin: 15px 0;
+}
+
+/* About */
+#about {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto 50px;
+  text-align: justify;
+}
+
+/* Horizontal rule */
+hr {
+  width: 30%;
+  margin: auto;
+  color: #d3d3d3;
+  border: 3px ridge #ecdada;
+}
+/* Time line Style */
+#timeline {
+  width: 80%;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: auto;
+  text-align: justify;
+  margin-top: 50px;
+}
+
+#timeline h2 {
+  margin-bottom: 15px;
+}
+
+#timeline ul {
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#timeline li {
+  margin-bottom: 15px;
+}
+
+a:last-of-type {
+  color: blue;
+  display: inline-block;
+  text-decoration: none;
+  /* width: 50%; */
+}
+
+a:last-of-type:hover,
+a:last-of-type:active {
+  color: red;
+  background-color: #fff;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  background-color: #ecdada;
+  padding: 20px;
+  margin: 30px 0 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+@media screen and (max-width: 768px) {
+  #img {
+    max-width: 100%;
+    height: auto;
+  }
+}

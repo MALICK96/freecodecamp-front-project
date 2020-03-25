@@ -1,0 +1,766 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript Tutorials</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+     
+        <nav id="navbar">
+            
+            <header id="header">
+                <h1>JavaScript Tutorial</h1>
+            </header>
+
+            <ul>
+        
+                <li><a href="#Introduction">Introduction</a></li>
+                <li><a href="#what_should_you_know">What Should You Know</a></li>
+        
+                <li><a href="#javaScript_and_java">JavaScript and Java</a></li>
+        
+                <li><a href="#variable_declarations">Variable declarations</a></li>
+                <li><a href="#comments">Comment in JavaScript</a></li>
+                <li><a href="#global_varibales">Global Variable</a></li>
+                <li><a href="#" id="variable_scope">Variable Scope</a></li>
+                <li><a href="#constant">Constant</a></li>
+                <li><a href="#data_types">Data Type</a></li>
+                <li><a href="#if_else_statements">If...else statements</a></li>
+                <li><a href="#swith_statement">Switch statement</a></li>
+                <li><a href="#for_loop">For loop</a></li>
+                <li><a href="#while_loop">While Loop</a></li>
+                <li><a href="#do_while_loop">Do while Loop</a></li>
+                <li><a href="#arrays">Arrays</a></li>
+                <li><a href="#objects">Objects</a></li>
+                <li><a href="#functions">Functions</a></li>
+                <li><a href="#hoisting">Hoisting in Js</a></li>
+                <li><a href="#scope">Scope</a></li>
+                <li><a href="#execution_context">Execution Context</a></li>
+                <li><a href="#this_variable">This variable</a></li>
+            </ul>
+            
+        </nav>
+       
+        <main id="main-doc" class="container">
+            <section class="main-section" id="Introduction">
+                <header>
+                    <h1>Introduction To JavaScript</h1>
+                </header>
+        
+                <article>
+                    <p>JavaScript is a cross-platform, object-oriented scripting language. It
+                        is a small and lightweight language. Inside a host environment (for
+                        example, a web browser), JavaScript can be connected to the objects of
+                        its environment to provide programmatic control over them.</p>
+        
+                    <p>
+                        JavaScript contains a standard library of objects, such as Array, Date,
+                        and Math, and a core set of language elements such as operators, control
+                        structures, and statements. Core JavaScript can be extended for a
+                        variety of purposes by supplementing it with additional objects; for
+                        example:
+                    </p>
+        
+                    <ul>
+                        <li>
+                            Client-side JavaScript extends the core language by supplying objects
+                            to control a browser and its Document Object Model (DOM). For example,
+                            client-side extensions allow an application to place elements on an
+                            HTML form and respond to user events such as mouse clicks, form input,
+                            and page navigation.
+                        </li>
+                        <li>
+                            Server-side JavaScript extends the core language by supplying objects
+                            relevant to running JavaScript on a server. For example, server-side
+                            extensions allow an application to communicate with a database,
+                            provide continuity of information from one invocation to another of
+                            the application, or perform file manipulations on a server.
+                        </li>
+                    </ul>
+                </article>
+            </section>
+        
+            <section class="main-section" id="what_should_you_know">
+                <header>
+                    <h1>What should You Know</h1>
+                </header>
+        
+                <article>
+                    <p>
+                        This guide assumes you have the following basic background:
+                    </p>
+        
+                    <ul>
+                        <li>
+                            A basic Understanding of the internet and the world wide web (WWW)
+                        </li>
+                        <li>
+                            Good Knowledge of HyperText Markup Language (HTML).
+                        </li>
+        
+                        <li>
+                            Some Programming Experience But not Required as you can go through some of the JavaScript tutorial
+                            on this web site and try to catch on.
+                        </li>
+                    </ul>
+                </article>
+            </section>
+        
+            <section id="javaScript_and_java" class="main-section">
+                <header>
+                    JavaScript and Java
+                </header>
+                <article>
+                    <p>
+                        JavaScript and Java are similar in some ways but fundamentally different
+                        in some others. The JavaScript language resembles Java but does not have
+                        Java's static typing and strong type checking. JavaScript follows most
+                        Java expression syntax, naming conventions and basic control-flow
+                        constructs which was the reason why it was renamed from LiveScript to
+                        JavaScript.
+                    </p>
+        
+                    <p>
+                        In contrast to Java's compile-time system of classes built by
+                        declarations, JavaScript supports a runtime system based on a small
+                        number of data types representing numeric, Boolean, and string values.
+                        JavaScript has a prototype-based object model instead of the more common
+                        class-based object model. The prototype-based model provides dynamic
+                        inheritance; that is, what is inherited can vary for individual objects.
+                        JavaScript also supports functions without any special declarative
+                        requirements. Functions can be properties of objects, executing as
+                        loosely typed methods.
+                    </p>
+                    <p>
+                        JavaScript is a very free-form language compared to Java. You do not
+                        have to declare all variables, classes, and methods. You do not have to
+                        be concerned with whether methods are public, private, or protected, and
+                        you do not have to implement interfaces. Variables, parameters, and
+                        function return types are not explicitly typed.
+                    </p>
+                </article>
+            </section>
+        
+            <section class="main-section" id="comments">
+                <header>
+                    Comments in JavaScript
+                </header>
+        
+                <article>
+                    <p>Comment are used to give us hint or a short decription of the code.
+                        We use comment to help us and other programmer who are reading our code to
+                        get some understand of we of line of code is doing. Good Comment can make our code clear
+                        and easy to follow we don't have to explain everything that the code is doing but just provide a short
+                        decripiton of what is happening in this particular line of code. syntax of comment in JS
+                        <pre>
+              <code>
+              // radius of a circle
+              var rad = 2.2
+              // compute the area of a circle
+              
+              var area = Math.PI * pow(rad, 2);
+        </code></pre>
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="variable_declarations">
+                <header>Declaring variables</header>
+                <article>
+                    You can declare a variable in three ways:
+                    <p>
+                        With the keyword var. For example, <code>var x = 42.</code> This syntax
+                        can be used to declare both local and global variables.
+                    </p>
+                    <p>
+                        By simply assigning it a value. For example, <code>x = 42.</code> This
+                        always declares a global variable. It generates a strict JavaScript
+                        warning. You shouldn't use this variant.
+                    </p>
+                    <p>
+                        With the keyword let. For example,<code> let y = 13.</code> This syntax
+                        can be used to declare a block scope local variable. See Variable scope
+                        below.
+                    </p>
+                </article>
+            </section>
+        
+            <section class="main-section" id="global_varibales">
+                <header>Global variables</header>
+                <article>
+                    <p>Global varibale are variable that not declare or defined inside of any function
+                        Hence the sit in the global scope and Global varibale are accessible inside of a any function defined in
+                        the code. And in JavasCript Global varible are just properties of the Global Object. In the browser it's
+                        the Window Object. That means we can set and acees global properties using the window.variable syntax.
+                    </p>
+        
+                    <p>
+                        Consequently, you can access global variables declared in one window or
+                        frame from another window or frame by specifying the window or frame
+                        name. For example, if a variable called phoneNumber is declared in a
+                        document, you can refer to this variable from an iframe as
+                        parent.phoneNumber.
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="variable_scope">
+                <header>Varibale Scope</header>
+                <article>
+                    <p>
+                        When you declare a variable outside of any function, it is called a
+                        global variable, because it is available to any other code in the
+                        current document. When you declare a variable within a function, it is
+                        called a local variable, because it is available only within that
+                        function.
+                    </p>
+        
+                    <p>
+                        JavaScript before ECMAScript 2015 does not have block statement scope;
+                        rather, a variable declared within a block is local to the function (or
+                        global scope) that the block resides within. For example the following
+                        code will log 5, because the scope of x is the function (or global
+                        context) within which x is declared, not the block, which in this case
+                        is an if statement.
+                    </p>
+        
+                    <pre><code> if (true) { 
+                        var x = 5; 
+                      } 
+                      console.log(x); // true
+                      </code>
+               </pre>
+        
+                    <p>This behavior change when use the <code>let</code> keyword introduce in EcmaScript 2015 ES6 or ES2015</p>
+                    <pre>
+              <code>
+                if (true) {let y = 5; } 
+                console.log(y); // ReferrenceError: y is not defined.
+              </code>
+              </pre>
+                </article>
+            </section>
+        
+            <section class="main-section" id="constant">
+                <header>Constant</header>
+                <article>
+                    <p>
+                        You can create a read-only, named constant with the const keyword. The
+                        syntax of a constant identifier is the same as for a variable
+                        identifier: it must start with a letter, underscore or dollar sign and
+                        can contain alphabetic, numeric, or underscore characters.
+                    </p>
+        
+                    <pre><code>const PI = 3.14;</code></pre>
+                    <p>
+                        A constant cannot change value through assignment or be re-declared
+                        while the script is running. It has to be initialized to a value.
+                    </p>
+        
+                    <p>
+                        The scope rules for constants are the same as those for let block scope
+                        variables. If the const keyword is omitted, the identifier is assumed to
+                        represent a variable.
+                    </p>
+        
+                    <p>
+                        You cannot declare a constant with the same name as a function or
+                        variable in the same scope. For example:
+                    </p>
+                    <pre>
+              <code
+                >// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL
+                CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements
+                }</code
+              ></pre>
+                    However, object attributes are not protected, so the following statement
+                    is executed without problems.
+                    <pre><code
+                >const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";</code
+              ></pre>
+                </article>
+            </section>
+        
+            <section class="main-section" id="data_types">
+                <header>Data types</header>
+                <article>
+                    <p>The latest ECMAScript standard defines seven data types:</p>
+                    <ul>
+                        <li>
+                            <p>Six data types that are primitives:</p>
+                            <ul>
+                                <li>Boolean. true and false.</li>
+                                <li>
+                                    null. A special keyword denoting a null value. Because JavaScript
+                                    is case-sensitive, null is not the same as Null, NULL, or any
+                                    other variant.
+                                </li>
+                                <li>undefined. A top-level property whose value is undefined.</li>
+                                <li>Number. 42 or 3.14159.</li>
+                                <li>String. "Howdy"</li>
+                                <li>
+                                    Symbol (new in ECMAScript 2015). A data type whose instances are
+                                    unique and immutable.
+                                </li>
+                            </ul>
+                        </li>
+        
+                        <li>and Object</li>
+                    </ul>
+                    Although these data types are a relatively small amount, they enable you
+                    to perform useful functions with your applications. Objects and functions
+                    are the other fundamental elements in the language. You can think of
+                    objects as named containers for values, and functions as procedures that
+                    your application can perform.
+                </article>
+            </section>
+        
+            <section class="main-section" id="if_else_statements">
+                <header>
+                    If Statement
+                </header>
+        
+                <article>
+                    <p>Sometimes we want to execute a set of code based on the result of a condition.
+                        Example if we are given a number to find out whether that particular number is even or odd. In case we
+                        need a condition to check if the given number is even or odd based on the result of the condition we can
+                        tell. Example we are given an interger number 7
+                        the task is to write a code that will determine whether tjis number is even or odd. We could write an if
+                        staement
+                        <pre> <code>
+                  if (7 % 2 === 0) {
+                    console.log("7 is Even"); // true
+                  } else {
+                    console.log("7 is Odd"); // false
+                  }
+                </code></pre><br>
+        
+                        The If statement check if the condition between parenthese is true
+                        then execute the first set of code if not nothing will happen the control
+                        continue on the next line of statement after the if block. But we can provide
+                        an else block which is optinal to the if statement. The else block will execute only if the condition of
+                        if statement return false. We could Even Write a chain of if...else if.. else block depending on our
+                        program
+                        Example: We have three person and their age [20, 30, 18] our task is to find out
+                        which one of these three person is older.
+        
+                        let create three variable for these person and their ages;
+        
+        
+        
+                        <pre>
+                <code>
+                  var jimmy = 20, john = 30;
+                  var mark = 18;
+                  if (Jimmy > mark) {
+                    if (jimmy > john) {
+                      console.log("jimmy is the oldest one");
+                    }
+                  } else if (mark > jimmy) {
+                    if (mark > john) {
+                    console.log("mark is the oldest one");
+                    }
+                  } else if (john > jimmy){
+                    if (john > mark)
+                      console.log("John is the oldes one");
+                  } else {
+                    console.log("The might all have the same age");
+                  }
+                </code></pre>
+        
+                        Note: The scope of if and else statement is immediately the next line of code after if or else if the {}
+                        is ommitted;
+                    </p>
+                </article>
+            </section>
+        
+            <section class="main-section" id="swith_statement">
+                <header>
+                    Swith Statement
+                </header>
+        
+                <article>
+                    <p>The swith statement allow us to make take an expression
+                        and evaluate it with defferent cases that might match the expression .
+                        If the match is found then that code for that case will execute and the control
+                        will fall through all the remaing case and show their code result. To avoid This once a particular match
+                        is found we might want to quit the switch statement in that case We can use the break staement after the
+                        each case. Example We want to check our varible value and show a message in the console
+                        <pre>
+              <code>
+                var str = "awesome day";
+                
+                swicth (str) {
+                case "awesome day":
+                  console.log("awesome day");
+                  break;
+                  case "terrible day":
+                    console.log("Terrible day");
+                  break;
+                  default:
+                    console.log("Error no matches found");
+                } 
+              </code></pre><br>
+        
+                        In this case the code will execute and will get "awesome day" in the console,
+                        suppose we ignore the break statement then the code will execute and the first match will shown to
+                        console and the remaining cases as well even the default option.
+        
+                        Note: The default case is optfinal in the switch stetement and it's just like the else statement
+                        associated with the if block
+                    </p>
+                </article>
+            </section>
+        
+            <section class="main-section" id="for_loop">
+                <header>For Loop</header>
+                <article>
+                    <p>Sometime when writting program we want to execute a code of block repeatedly
+                        instead of writting each statement line by line.A simple example my be we wanna print to the console 0 -
+                        100. We could write a for which is a control structure and if take three parameter, (initialization,
+                        condition, increment).
+                        <pre><code>
+                  for (var i = 0; i &lt; 100; i++) {
+                    console.log(i); // 0, 1, 2,.........,99
+                  }
+                </code></pre>
+        
+                        This loop will start with a counter i and is first set to 0.
+                        Then next is be the checking of the condition if i is less than 100 and obviously it is.
+                        The next step to excute is the code inside of the curly braces {}. After that next step is to increment
+                        i by 1 and now i is equal to 1;
+                        then next is the condition check and i is indeed less than 100, then the code in in loop will execute
+                        again and again till i become 100 then the condition will check is 100 less than 100 which is false/ The
+                        loop terminate and the exauction of the code continue on the next line after the for loop.
+        
+                        Note: Th initialization stage just happen only once
+        
+                    </p>
+                </article>
+            </section>
+        
+            <secction class="main-section" id="while_loop">
+                <header>
+                    While Loop
+                </header>
+        
+                <article>
+                    <p>While loop is a form of for loop but instead including the initialization stage in the loop it happen
+                        outside of the loop first we must declare a loop counter the check if the condition is true if it is the
+                        the body of the loop will execute and we must include the incrementation stage inside of the while loop
+                        like so:
+                        <pre>  <code>
+                  var counter = 0;
+                  
+                  while (counter &lt; 100) {
+                    console.log(counter); // output: 0, 1, ......., 99
+                    counter++;
+                  }
+                  
+                  </pre></code>
+                    </p>
+                </article>
+        
+            </secction>
+        
+            <section class="main-section" id="do_while_loop">
+                <header>
+                    Do while Loop
+                </header>
+        
+                <article>
+                    <p>The do while loop is a deffaren't kind of loop that assure us our code defined
+                        inside the do while loop will get executed at least once. Because The do while loop will execute our
+                        code block then at the end check if the condition is true if it is
+                        it will repeated the code inside the curly braces and check again it continue the same process as long
+                        as the condition result is true. Example we wanna prompt a user for number between 1 - 20. we could
+                        write
+                        <pre><code>
+                  var n;
+                  
+                  do {
+                    n = Number(prompt("Enter a number between 1 - 20", ""));
+                  } while(n &lt; 1 && n &gt; 20);
+                </code></pre><br>
+        
+                        Note: The prompt(); method allow us to get input from the user and return the value the user has typed
+                        in the prompt but this method return a string as a value which we must convert into number using The
+                        JavaScript Number fucntion.
+        
+                    </p>
+                </article>
+            </section>
+        
+        
+            <section class="main-section" id="arrays">
+                <header>
+                    Array in JavScript
+                </header>
+        
+                <article>
+                    <p>Arrays are a list of data, in Javascript array can contains deffrent types of data like numbers, strings,
+                        booleans, objects, functions etc.., which is not possible in the programming language like java and C++,
+                        because the array strong typed language while javascript is a dynamically typed language which means
+                        that Javascript compiler is able to distinguishe between a number and a string and it will do it on the
+                        fly means at run time. In javascript we declare an array using [] or create a new instance of the
+                        JavaScript Array Object. Syntax
+                        <pre><code>
+                  // this a litteral notation         
+                  var list = [3, "hello", true, function(){}, {name: "John", age :23}];
+                  
+                  // or using array consytructor function
+                  var  list = new Array(3, "hello", true, function(){}, {name: "John", age :23})
+                </code><pre></p>
+            </article>
+          </section>
+          
+          <section class="main-section" id="objects">
+            <header>
+              Object in JavaScript
+            </header>
+            
+            <p>In Javscript we can create an object which will act like as a hash table in other programming language or dicionnary in Python Javscript Object are a collection of properties each of which is composed of key: value pair and a comma is added after each propertie so that we can continue defining properties in our object. Syntax
+              <pre><code>
+                
+                var person = {
+                  firstName: "John",
+                  lastName: "Smith",
+                 age: 24,
+                describe() {
+                return this.firstName + this.lastName + " he is " + this.age; 
+                }
+                 }
+                
+                console.log(person.describe()); // John Smith he is 24
+                
+              </code></pre><br></p>
+            </section>
+        
+            <section class="main-section" id="functions">
+                <header>
+                    Function in JavaScript
+                </header>
+        
+                <p>
+                    In javScript Function are main building block of the language. In javascript
+                    function can be treated as value, and can function can be passed o another function
+                    as arguments and function can return function because all this aspect function in JavaScript are called
+                    first class function. Syntax of defining a fucntion in JavaScript
+                    <pre>
+              <code>
+                function functionName(param1, param2,...) {
+                  /// some code here
+                }
+                
+                functionName();
+              </code></pre><br>
+                    In the above example we can see that before defining a function we must use the function keyword folllowed
+                    by the function name and set of parantheses in which we can list some parameters to transport some value
+                    into our function that will be use in the function scope and treated as local variable of this function. And
+                    this way of writting function is named function declaration
+                </p>
+                <h2>Function Expression</h2>
+                <p>There another way of defining a function in javaScript and it's funtion expression
+                    because it just like an expression. Syntax
+                    <pre>
+            <code>
+                var greet = function(name) {
+                return  "Hello " + name;
+            }
+                greet("John Doe"); // Hello John Doe
+              </code>
+        </pre><br>
+                    When we writting a function like this we must defining it first then call it down the line not before this
+                    happen because in the creation phase of varibale object that each an every execution context get, the code
+                    is scanned for variables declarations and for each varibale declaration a property is created in the
+                    varibale object and set to undefined. so when we are writting function expression we have to remenber that
+                    we can;t call it before the code that define the function we can only call it after the code that define it.
+                    Example
+        
+                    <pre>
+              <code>
+                mult(2, 2); /// TypeError: mult is not a function
+                var mult = function(x, y) {
+                  return x * y;
+                }
+              </code>
+        </pre>
+                    <p>
+        
+                        <section class="main-section" id="hoisting">
+                            <header>
+                                Hoisting
+                            </header>
+        
+                            <artcile>
+                                <p>Hoisting is a JavaScript mechanism where variables and function declarations are moved to the
+                                    top of their scope before code execution. Inevitably, this means that no matter where
+                                    functions and variables are declared, they are moved to the top of their scope regardless of
+                                    whether their scope is global or local.
+                                    <pre>
+                    <code>
+                      greet("John"); // Hello John
+                      function greet(name) {
+                        var msg = "Hello ";
+                        return msg + name; 
+                      }
+                    </code>
+        </pre>
+                                    It is possible to call he function greet above it's function definition
+                                    because when we excute our code the javascript interpreter will scan all the code for
+                                    function declaratins and for each a property is defined in the variable object and set to
+                                    the funtion declaration. It is called function hoisting and it's possible only for function
+                                    declation not function exprescion because function expression a just expression.
+                                </p>
+                            </artcile>
+                        </section>
+            </section>
+        
+            <section class="main-section" id="scope">
+                <header>
+                    Scope in JavaScript
+                </header>
+        
+                <article>
+                    <p>In javaScript Scope determine where a certain varibale or function can be seen and In JavaScript
+                        functions are used to create scope that means that any varibale define in the function will only be
+                        accessible inside that function.Syntax
+                        <pre>
+                <code>
+                  var name = "john"; // Global scope
+                  function sayHi() {
+                    var name = "John";
+                    console.log(name); // John;
+                  }
+                  
+                  console.log(name); // john
+                </code></pre><br>
+                        This example show that we show us to things first the we are using the same name for the two variable
+                        and this possible because we used function and since functions create scope in JavaScript the name
+                        varible inside the function sayHi will shadow the outer varibale name and we can see that in the
+                        function the name varible is local to the function sayHi and it's value is John with uppercase J and
+                        outside of the function the name varibale is john with lowecase j. second thing is that we can access
+                        the name varibale defined in the function scope. another example
+                        <pre><code>
+                  function foo() {
+                    var name = "foo is awesome function";
+                    console.log(name); // foo is awesome function
+                  }
+                  
+                  console.log(name); // ReferrenceError:  name is not defined
+                </code></pre>
+                    </p>
+                </article>
+            </section>
+        
+            <section class="main-section" id="execution_context">
+                <header>
+                    Execution in JavaScript
+                </header>
+        
+                <article>
+                    <p>An Execution is a box or a container in which a piece code is store and get evaluated. Important to note
+                        that in JavaScript our code get always executed in an execution context and default exexution context in
+                        the browser is the window object that's why all the varibales and functions defined in the global scope
+                        are just properties window Object and functions
+                        are just method of the window Object. Example
+                        <pre>
+              <code>
+                var name = "John";
+                
+                console.log(window.name === name); // true
+                
+                function foo() {
+                  console.log("Foo is awesome !");
+                }
+                
+                console.log(window.foo === foo); // true
+                
+              </code>
+              </pre><br>
+        
+                        An Execution context Object contains three properties which are objects too.
+                        <ul>
+                            <li>Variable Object</li>
+                            <li>Scope Chain</li>
+                            <li>This variable</li>
+                        </ul>
+        
+                        <dl>
+                            <dt>Varible Objet</dt>
+                            <dd>Variable Object contains all function arguments, variables declarations as well as function
+                                declaration</dd>
+                        </dl>
+        
+                        <dl>
+                            <dt>Scope Chain</dt>
+                            <dd>The scope chain conatins current variable of Object and Variable Object Of old parents</dd>
+                        </dl>
+        
+                        <dl>
+                            <dt>This Varible</dt>
+                            <dd>The <strong>this</strong> varible refer to the current context the code resides in. In a regular
+                                function a regular function called the <strong>this</strong> variable refer to the window object
+                                in the case of browsers but in an object when the method is called the this variable refer to
+                                the objetc that calls the method.</dd>
+                        </dl>
+                        Example<br>
+                        <pre>
+            <code>
+            console.log(this) // window object
+            
+            function foo() {
+              console.log(this); // still window object
+            } 
+            
+            var person = {
+              name: "john",
+              age: 24,
+              getDetail: function() {
+                return this.name + " is " + this.age + " old";
+              }
+            }
+            
+            person.getDetail(); // john is 24 old
+        </code>
+        </pre>
+                    </p>
+                </article>
+            </section>
+        
+
+    <section class="main-section" id="this_variable">
+        <header>
+            <strong>This</strong> variable
+        </header>
+        
+        <article>
+            <p>
+                What is “this” keyword in JavaScript. this keyword refers to an object, that object which is executing the current bit
+                of javascript code. In other words, every javascript function while executing has a reference to its current execution
+                context, called this. Example
+
+                <pre>
+                    <code>
+                        function myFunction() {
+                           return "My name is " + this.name + " and I'm " + this.age + " old";
+                        }
+
+                        var obj = {name: "John", age: 24};
+
+                        var bound = myFunction.bind(obj);
+
+                        bound(); // My name is john and I'm 24 old
+                    </code>
+                </pre>
+            </p>
+        </article>
+    </section>
+
+    <section class="footer">
+        <p>This Documentation is a reference to <a href="#">MDN</a> Javascript</p>
+    </section>
+    </main>
+    
+    </body>
+</html>

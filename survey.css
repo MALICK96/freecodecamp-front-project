@@ -1,0 +1,172 @@
+/* CSS VARIABLES */
+:root {
+  --color-red: #f00;
+  --text-white: #fff;
+
+  --dark-blue: rgb(17, 17, 54);
+  --bg-green: rgb(13, 192, 13);
+  --bg-hero: #ddd;
+  --hero-text-dark: #111;
+}
+
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: var(--color-red);
+  color: var(--text-white);
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  background-color: var(--bg-hero);
+  color: var(--hero-text-dark);
+}
+
+.header h1 {
+  margin-top: 20px;
+}
+
+.header p {
+  text-align: center;
+  font-size: 1.25rem;
+  margin: 30px 0;
+}
+/* Container */
+.container {
+  width: 120%;
+  margin: 3.125rem auto 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  padding: 0 0 0.625rem;
+  margin-bottom: 1.875rem;
+  width: 150%;
+  margin-left: -50px;
+}
+
+/* Title */
+.text-center {
+  text-align: center;
+}
+
+/* Survey from */
+#survey-form {
+  width: 150%;
+  /* margin: auto; */
+  padding: 20px;
+  background-color: var(--dark-blue);
+  border-radius: 0.25rem;
+  margin-left: -50px;
+}
+
+/* Labe; style */
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+/* form-group classes styles */
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+
+/* Inout */
+input {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+/* Form control class */
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.375rem;
+  padding: 2.375rem 0.75rem;
+  color: #495057;
+  background-color: var(--text-white);
+  border: 1px solid #cedad4;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Radio button */
+.input-radio {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  max-height: 1.25rem;
+  margin-top: 5px;
+  font-size: 20px;
+  width: 15%;
+  height: 50px;
+  margin-left: -15px;
+  /* max-resolution: ; */
+}
+
+/* ChecBoxes */
+
+.input-checkbox {
+  margin-right: 15px;
+  padding: 8px;
+  width: 30px;
+  height: 50px;
+}
+/* A div with .recommendTo class */
+.recommendTo {
+  display: flex;
+}
+
+/* Textarea */
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.652rem;
+  resize: vertical;
+}
+/* Submit btn */
+.form-group:last-of-type {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+button {
+  display: block;
+  width: 100%;
+  background-color: var(--bg-green);
+  color: inherit;
+  padding: 0.75rem;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+/* Media query for small screen */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}

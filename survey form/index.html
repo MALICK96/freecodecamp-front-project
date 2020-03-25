@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Free Code CaMp</h1>
+        <p id="description">Please fill this online form</p>
+      </header>
+      <form action="index.html" method="POST" id="survey-form">
+        <div class="form-group">
+          <label for="name" class="label-name" id="number-label">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="john"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="label-email" id="email-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="john@example.com"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="number" id="number-label">Age (Optional)</label>
+          <input
+            type="number"
+            min="10"
+            max="99"
+            id="number"
+            name="age"
+            placeholder="Age"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <p>What your Gender</p>
+          <input
+            type="radio"
+            id="male"
+            name="gender"
+            value="male"
+            class="radio-input"
+            checked
+          />
+
+          <label for="male">Male</label>
+
+          <input
+            type="radio"
+            id="female"
+            name="female"
+            value="female"
+            class="radio-input"
+          />
+
+          <label for="female">Female</label>
+
+          <input
+            type="radio"
+            id="other"
+            name="other"
+            value="other"
+            class="radio-input"
+          />
+
+          <label for="other">Other</label>
+        </div>
+
+        <div class="form-group">
+          <p>What is your Favorite Music</p>
+          <input
+            class="radio-input"
+            type="radio"
+            id="jazz"
+            name="jazz"
+            value="jazz"
+          />
+          <label for="jazz">Jazz</label>
+
+          <input
+            class="radio-input"
+            type="radio"
+            id="raggae"
+            name="raggae"
+            value="raggae"
+          />
+          <label for="raggae">Raggae</label>
+
+          <input
+            class="radio-input"
+            type="radio"
+            id="hip-pop"
+            name="hip-pop"
+            value="hip-pop"
+          />
+          <label for="hip-pop">Hip Pop</label>
+
+          <input
+            class="radio-input"
+            type="radio"
+            id="r-b"
+            name="r-nb"
+            value="r-b"
+          />
+          <label for="r-b">R &#38;B</label>
+        </div>
+
+        <div class="form-group">
+          <p>What is your Profession?</p>
+          <select name="job" id="dropdown">
+            <option value="">Choose One</option>
+            <option value="student">student</option>
+            <option value="full-learner">Full Time Leaner</option>
+            <option value="full-job">Full Time Job</option>
+            <option value="part-job">Part Time Job</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>What your religion?</p>
+          <select name="religion" id="religion">
+            <option value="">Choose One</option>
+            <option value="hindu">Hindu</option>
+            <option value="christian">Christian</option>
+            <option value="Muslim">Muslim</option>
+            <option value="jewesh">Jewesh</option>
+            <option value="none">None Of Above</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What are the Programming Languages you like the most.
+            <span class="clue">You can choose more than one</span>
+          </p>
+          <div class="lang-sec">
+            <input
+              class="check-input"
+              type="checkbox"
+              name="languague"
+              id="C"
+              value="C"
+            />
+            <label for="c">C</label>
+          </div>
+
+          <div class="lang-sec">
+            <input
+              type="checkbox"
+              name="languague"
+              id="C-plus-plus"
+              value="C-plus-plus"
+              class="check-input lang-sec"
+            />
+            <label for="C-plus-plus">C++</label>
+          </div>
+          <div class="lang-sec">
+            <input
+              class="check-input lang-sec"
+              type="checkbox"
+              name="languague"
+              id="python"
+              value="pyhton"
+            />
+            <label for="python">Python</label>
+          </div>
+          <div class="lang-sec">
+            <input
+              class="check-input lang-sec"
+              type="checkbox"
+              name="languague"
+              id="java"
+              value="java"
+            />
+
+            <label for="java">Java</label>
+          </div>
+          <div class="lang-sec">
+            <input
+              class="check-input lang-sec"
+              type="checkbox"
+              name="languague"
+              id="javaScript"
+              value="javaScript"
+            />
+            <label for="javaScript">javaScript</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <p>
+            How would you like to describe Programming?
+          </p>
+
+          <select name="programming" id="programming">
+            <option value="">Select One</option>
+            <option value="easy">Easy</option>
+            <option value="difficult">Difficult</option>
+            <option value="challenging">Challenging</option>
+            <option value="fun">Fun and Challenging</option>
+          </select>
+        </div>
+
+        <div class="form-group comment-box">
+          <p>Any Comments or Suggestion</p>
+          <textarea
+            name="comments"
+            id="comments"
+            class="form-control comment-box"
+            placeholder="type something here..."
+          ></textarea>
+        </div>
+        <div class="form-group submit-div">
+          <button class="submit" type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
